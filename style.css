@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+.wrapper{ 
     height: 100vh;
     width: 100vw;
     background-image: url(gradient-bg.jpg);
@@ -11,6 +11,7 @@
     background-position: center;
     display: grid ;
     place-items: center;
+    padding: 2rem;
 }
 .game-info{
     background-color: rgba(255, 255, 255, 0.281);
