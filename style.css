@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/gradient-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid ;
+    place-items: center;
+}
+.game-info{
+    background-color: rgba(255, 255, 255, 0.281);
+    padding: 0.3rem 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+.tic-tac-toe{
+    background-color: rgba(255, 255, 255, 0.281);
+    height: 320px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.box{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1, .box2, .box5, .box4{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.box3, .box6{
+    border-bottom: 2px solid white;
+}
+.box7, .box8{
+    border-right: 2px solid white;
+}
+#newGame{
+    display: none;
+}
+.active{
+    display: inline;
+}
+.win{
+    background-color: rgb(123, 255, 123);
+}
